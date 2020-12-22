@@ -29,6 +29,11 @@ def draw():
             x=x+speedX
     if(y>height or y<0):
         speedY=speedY*(-1)
+    if(x>width):
+        background(255,0,0)
+        fill(0,255,0)
+        textSize(70)
+        text("Try again!", width/4, height/2)
 def mousePressed():
     global x,y,speedX,speedY
     x=width/2
